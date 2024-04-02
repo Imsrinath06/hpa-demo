@@ -12,6 +12,7 @@ import static com.hpa.util.DataGenerator.*;
 public class UserService {
 
     public User getUser(){
+        System.out.println("execution of get user started");
         User user = new User();
         user.setUserId(UUID.randomUUID().toString());
         user.setUserName(generateRandomName());
